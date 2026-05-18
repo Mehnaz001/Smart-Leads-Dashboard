@@ -1,5 +1,5 @@
 import api from './axios';
-import type { ApiResponse, User } from '../types';
+import { ApiResponse, User } from '../types';
 
 interface LoginData { email: string; password: string; }
 interface RegisterData { name: string; email: string; password: string; role?: string; }
