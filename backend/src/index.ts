@@ -27,8 +27,8 @@ app.get('/health', (_req, res) => {
   res.json({ status: 'ok', message: 'Smart Leads API is running' });
 });
 
-app.use('/api/auth', authRoutes);
-app.use('/api/leads', leadRoutes);
+app.use('/auth', authRoutes);
+app.use('/leads', leadRoutes);
 
 // Error handling
 app.use(notFound);
